@@ -39,6 +39,7 @@ public:
     Head = insertRecursive(Head, value);
   }
 
+private:
   Node *insertRecursive(Node *node, int value)
   {
     // needs a base case here
@@ -60,6 +61,26 @@ public:
     return node;
   }
 
+public:
+  void printInOrderTraversal()
+  {
+    inOrderTraversal(this->Head);
+  }
+
+  // implements an in-order traversal to display the tree nodes'values
+  // left -> root -> right (sorted output)
+private:
+  void inOrderTraversal(Node *node)
+  {
+    if (node == nullptr)
+    {
+      return;
+    }
+    inOrderTraversal(node->Left);
+    cout << node->data << "\n";
+    inOrderTraversal(node->right);
+  }
+
   void deleteTree(Node *node)
   {
     if (node == nullptr)
@@ -74,6 +95,7 @@ public:
     }
   }
 
+public:
   ~BinaryTrees()
   {
     deleteTree(Head); //* clean up all nodes starting from the root node
@@ -83,6 +105,11 @@ public:
 int main()
 {
   BinaryTrees myTree;
+  myTree.insert(54);
   myTree.insert(23);
+  myTree.insert(100);
+  myTree.insert(130);
+  myTree.insert(32);
+  myTree.printInOrderTraversal();
   return 0;
 }
