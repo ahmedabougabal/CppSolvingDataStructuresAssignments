@@ -3,9 +3,8 @@
 
 ***I will document some of my DataStructures taken notes here.***
 
-![Stars](https://img.shields.io/github/stars/ahmedabougabal/CppSolvingDataStructuresAssignments?style=social)
-![Forks](https://img.shields.io/github/forks/ahmedabougabal/CppSolvingDataStructuresAssignments?style=social)
-![Awesome](https://img.shields.io/badge/Awesome-%E2%AD%90-blueviolet)
+ [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Project Status](https://img.shields.io/badge/status-Still%20in%20Progress-yellow)](https://github.com/yourusername/mernStackMilestoneProject_ITI)
 ![Binary Tree](https://img.shields.io/badge/Data%20Structure-Binary%20Tree-blue)
 ![Linked List](https://img.shields.io/badge/Data%20Structure-Linked%20List-brightgreen)
 
