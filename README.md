@@ -3,6 +3,16 @@
 
 ***I will document some of my DataStructures taken notes here.***
 
+![Stars](https://img.shields.io/github/stars/ahmedabougabal/CppSolvingDataStructuresAssignments?style=social)
+![Forks](https://img.shields.io/github/forks/ahmedabougabal/CppSolvingDataStructuresAssignments?style=social)
+![Awesome](https://img.shields.io/badge/Awesome-%E2%AD%90-blueviolet)
+![Binary Tree](https://img.shields.io/badge/Data%20Structure-Binary%20Tree-blue)
+![Linked List](https://img.shields.io/badge/Data%20Structure-Linked%20List-brightgreen)
+
+
+![Profile Views](https://komarev.com/ghpvc/?username=ahmedabougabal&color=brightgreen)
+
+
 # Trees
 - trees are used to store information.
 - tree is usually upside down.
@@ -51,8 +61,15 @@
 -- A linked List is a special case of a binary tree.
 
 
+---
 
+<div align="center" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; border: 1px solid #e1e4e8;">
+  <h3>⚠️ Heads Up!</h3>
+  <p><strong>This ReadMe is under constant updates.</strong></p>
+  <p>Stay tuned for new notes, revisions, and insights as I continue building this repository. 📚💡</p>
+</div>
 
+---
 
 
 
