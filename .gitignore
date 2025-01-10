@@ -1,3 +1,8 @@
+# Ignore executables
 *.exe
+
+# Ignore VS Code settings
 .vscode/
-Binary Tree/BonusBinaryArray
+
+# Ignore output directory
+output/
