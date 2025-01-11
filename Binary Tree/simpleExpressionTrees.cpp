@@ -44,6 +44,18 @@ void printPostOrder(Node *node)
     cout << node->data << "\n";
 }
 
+// preorder (visit, left, right) VLR
+void printPreOrder(Node *node)
+{
+    if (node == nullptr)
+    {
+        return;
+    }
+    cout << node->data << "\n";
+    cout << node->left->data << "\n";
+    cout << node->right->data << "\n";
+}
+
 int main()
 {
     Node *plus = new Node('+'); // will print char of '+' => 43
@@ -60,5 +72,7 @@ int main()
     cout << "\n============================\n";
 
     printPostOrder(plus);
+    cout << "\n============================\n";
+    printPreOrder(plus);
     return 0;
 }
