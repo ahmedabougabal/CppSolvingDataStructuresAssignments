@@ -32,6 +32,18 @@ void printInOrder(Node *node)
     printInOrder(node->right);
 }
 
+// LRV (left, right, visit)
+void printPostOrder(Node *node)
+{
+    if (node == nullptr)
+    {
+        return;
+    }
+    printPostOrder(node->left);
+    printPostOrder(node->right);
+    cout << node->data << "\n";
+}
+
 int main()
 {
     Node *plus = new Node('+'); // will print char of '+' => 43
@@ -45,6 +57,8 @@ int main()
     plus->right = node3;
 
     printInOrder(plus);
-    cout << "\n";
+    cout << "\n============================\n";
+
+    printPostOrder(plus);
     return 0;
 }
