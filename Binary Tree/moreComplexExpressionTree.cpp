@@ -27,7 +27,29 @@ public:
 		this->left = nullptr;
 		this->right = nullptr;
 	}
+	// adds evaluate functionality (leaf got the numbers while internal nodes got the operators)
+	// recursive approach will be used
 };
+
+int evaluate(Node *current)
+{
+	if (current->left == nullptr && current->right == nullptr)
+	{
+		return current->get_data();
+	}
+	int leftResult = evaluate(current->left);
+	int rightResult = evaluate(current->right);
+
+	if (current->get_data() == '+')
+	{
+		return leftResult + rightResult;
+	}
+	else if (current->get_data() == '*')
+	{
+		return leftResult * rightResult;
+	}
+	return 0;
+}
 
 void printInOrder(Node *root)
 {
@@ -68,6 +90,7 @@ int main()
 	multiply->right = node4;
 
 	printInOrder(multiply);
-
+	cout << "\n=================Evaluation==================\n";
+	cout << evaluate(multiply);
 	return 0;
 }
