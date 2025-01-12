@@ -58,6 +58,18 @@ int evaluateTree(Node *curr)
   return 0;
 }
 
+void clear(Node *current)
+{
+  if (current == nullptr)
+  {
+    return;
+  }
+  clear(current->left);
+  clear(current->right);
+  delete current;
+  current = nullptr;
+}
+
 int main()
 {
   Node *root = new Node('*');
@@ -83,6 +95,9 @@ int main()
   divide->left = node8;
 
   cout << evaluateTree(root) << "\n";
-
+  cout << "Clearing memory\n";
+  clear(root);
+  root = nullptr;
+  cout << evaluateTree(root) << "\n"; // should be 0
   return 0;
 }
