@@ -70,10 +70,24 @@ void printInOrder(Node *root)
 	}
 
 	printInOrder(root->right);
+}
 
-	// cout << root->left->get_data() << "\n";
-	// cout << root->get_data() << "\n";
-	// cout << root->right->get_data() << "\n";
+void printPostOrder(Node *root)
+{
+	if (root == nullptr)
+	{
+		return;
+	}
+	printPostOrder(root->left);
+	printPostOrder(root->right);
+	if (root->get_data() == '+' || root->get_data() == '*')
+	{
+		cout << char(root->get_data()) << "\n";
+	}
+	else
+	{
+		cout << root->get_data() << "\n";
+	}
 }
 
 int main()
@@ -89,7 +103,10 @@ int main()
 	multiply->left = plus;
 	multiply->right = node4;
 
+	cout << "\n=================InOrder==================\n";
 	printInOrder(multiply);
+	cout << "\n=================PostOrder of tree '*' ==================\n";
+	printPostOrder(multiply);
 	cout << "\n=================Evaluation==================\n";
 	cout << evaluate(multiply);
 	return 0;
