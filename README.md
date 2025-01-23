@@ -62,11 +62,60 @@ we need to create an expression tree (leaves are operands and others are operato
 
 can draw this tree : (2+3)\*4
 
-types of traversal
+# types of traversal
 
-- LVR (left, visit, right)
-- VLR (visit, left, right)
-- LRV (left, right, visit)
+- LVR (left, visit, right) --> in order traversal
+<br />
+how to know the printed nodes visually ?
+<br />
+
+project down each node and read from left to right, this is how the binary tree is represented visually as shown.
+
+
+![image](https://github.com/user-attachments/assets/8b68607a-96a2-425a-b7f7-d9367194e1f5)
+
+---
+
+- LRV (left, right, visit) --> post order traversal
+
+ --> left first, then right first , then printing the nodes 
+
+ how to deduce the printed nodes visually ? 
+ 
+just in 2 steps : 
+
+**step 1**
+for every node , if it doesnot have a right , then project it down, what if it does have a right node? --> wait for it 
+
+**step 2**
+
+for the nodes that have a right node , project it down after its right node.
+
+note that, when projecting the nodes in step 2 , we go from bottom to up level by level.
+
+![image](https://github.com/user-attachments/assets/80d4a03b-e2d0-4145-be93-954e771f2893)
+
+---
+
+- VLR (visit, left, right) --> preorder traversal
+
+ how to deduce the printed nodes visually ? 
+
+will be the opposite of the post order traversal (2 steps)
+
+**step 1**
+for every node , if it doesnot have a left, then project it down, what if it does have a left node? --> wait for it 
+
+**step 2**
+then we project the nodes that have a left node before its left subtrees 
+
+
+- note that, when projecting the nodes in step 2 , we go from bottom to up level by level.
+
+
+![image](https://github.com/user-attachments/assets/83789541-068c-4e8d-b1b2-738d01c9af96)
+
+
 
 ---
 
