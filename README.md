@@ -116,6 +116,29 @@ then we project the nodes that have a left node before its left subtrees
 ![image](https://github.com/user-attachments/assets/83789541-068c-4e8d-b1b2-738d01c9af96)
 
 
+---
+
+# Full / strict binary trees
+
+- it's a tree where each node has 0 or 2 children.
+
+## what is an internal node in a full binary tree ? 
+- it's a non leaf node (a node with 1+ child) , in a full binary tree , leaf nodes  = internal nodes + 1 
+
+## given height , how to deduce the min number of nodes in a full binary tree ?
+- min # no. of nodes = 2 * h + 1  
+
+# perfect binary trees is satisfied with 2 conditions  
+**1st**
+- all leaf nodes have the same level. 
+**2st**
+- all other nodes (internal nodes) have 2 children.
+
+## what is a complete level ? 
+- it is a level where all possible nodes exist.
+ 
+![alt text](image-1.png)
+4 levels but its maximum number of edges is 3 (height is 3). 
 
 ---
 
