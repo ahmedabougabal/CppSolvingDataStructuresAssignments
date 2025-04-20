@@ -138,7 +138,7 @@ then we project the nodes that have a left node before its left subtrees
 - it is a level where all possible nodes exist.
  
 ![alt text](image-1.png)
-4 levels but its maximum number of edges is 3 (height is 3). 
+- 4 levels but its maximum number of edges is 3 (height is 3). 
 
 ---
 
