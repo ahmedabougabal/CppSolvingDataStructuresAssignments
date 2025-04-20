@@ -138,13 +138,19 @@ then we project the nodes that have a left node before its left subtrees
 - it is a level where all possible nodes exist.
  
 ![alt text](image-1.png)
-4 levels but its maximum number of edges is 3 (height is 3).
+- 4 levels but its maximum number of edges is 3 (height is 3). 
 
 
 ## complete binary tree
 it is a tree where all levels are complete but the last one isnot complete (missing nodes) where (only a few nodes from the right will be missing) or only nodes from the left will be existing.
 
-### a perfect binary tree is a complete tree / full tree.
+### a perfect binary tree is a complete tree / full tree. but a complete binary tree is not a perfect binary tree due to missing the nodes which violates the 2 conditions i wrote above.
+
+here is an illustration : 
+![alt text](image-2.png)
+
+
+
 ---
 
 <div align="center" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; border: 1px solid #e1e4e8;">
