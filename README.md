@@ -145,8 +145,9 @@ then we project the nodes that have a left node before its left subtrees
 it is a tree where all levels are complete but the last one isnot complete (missing nodes) where (only a few nodes from the right will be missing) or only nodes from the left will be existing.
 
 ### a perfect binary tree is a complete tree / full tree. but a complete binary tree is not a perfect binary tree due to missing the nodes which violates the 2 conditions i wrote above.
+- here is an illustration : 
 
-here is an illustration : 
+
 ![alt text](image-2.png)
 
 
