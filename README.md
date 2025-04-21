@@ -198,7 +198,7 @@ so the difference is 1 which satisfies the condition__**
 - __in other words__ : 
 - **if we have 7 nodes then the numbers of levels is log2(7+1) = log2(8) = 3** 
 - 1 Node => 1, 3 Nodes => 2 levels , 7 Nodes => 3, 15 Nodes => 4 levels ( these are for perfect case )
-**For M leafs, the min # of levels is: ceil(log M) + 1**
+- **For M leafs, the min # of levels is: ceil(log M) + 1**
 - 1 leafs => 1 level, 2 leafs => 2 levels, 4 leafs => 3 levels, 8 leafs => 4 levels, 16 leafs => ⇒ levels 5
 
 ---
