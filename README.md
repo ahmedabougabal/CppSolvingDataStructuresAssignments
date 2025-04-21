@@ -190,6 +190,11 @@ so the difference is 1 which satisfies the condition__**
 - Each level has max of 2h nodes
 - For L levels, No more than 2^L -1 nodes
 - For N nodes, the min # of levels is: ceil(log(N+1)) , NOTE : CEIL HERE CORRESPONDS TO THE LOG OF BASE 2 !
+
+
+![alt text](image-5.png)
+
+
 - __in other words__ : 
 - **if we have 7 nodes then the numbers of levels is log2(7+1) = log2(8) = 3** 
 - 1 Node => 1, 3 Nodes => 2 levels , 7 Nodes => 3, 15 Nodes => 4 levels ( these are for perfect case )
