@@ -152,6 +152,27 @@ it is a tree where all levels are complete but the last one isnot complete (miss
 
 
 
+--- 
+
+## degenerate tree : a tree where each node has 1 child. (note that degenerate subtrees make our code slow)
+
+## balanced binary tree is a case of a degenerate tree. 
+## a balanced binary tree must satisfy that the difference between heights of left subtree and right subtree is not more than 1 
+
+
+#### example : 
+
+![alt text](image-3.png)
+
+- this is a balanced binary tree because : 
+
+**__The left subtree has a height of 2 (2 levels down)
+The right subtree has a height of 1 (1 level down)
+so the difference is 1 which satisfies the condition__**
+
+# complete / perfect trees are balanced.
+
+
 ---
 
 <div align="center" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; border: 1px solid #e1e4e8;">
