@@ -173,6 +173,19 @@ so the difference is 1 which satisfies the condition__**
 
 # complete / perfect trees are balanced.
 
+---
+# binary trees formulas
+
+![alt text](image-4.png)
+
+**this is a perfect tree with 4 levels and a height of 3, remember that levels are 0-based indexed**
+
+**levels = height + 1**
+
+## to calculate the total number of nodes in this binary tree , it is 2 ^ (h+1) - 1 nodes 
+## remember : (log 2 to base 2 = 1)
+## to get the height from the formula number of nodes (n) = 2 ^ (h+1) -1 , we use log to both right hand and left sides and then the height = Log(n+1) - 1 , the base here is 2 not 10  
+
 
 ---
 
