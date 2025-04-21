@@ -164,6 +164,7 @@ it is a tree where all levels are complete but the last one isnot complete (miss
 
 ![alt text](image-3.png)
 
+**this is not a complete nor perfect but it is balanced**
 - this is a balanced binary tree because : 
 
 **__The left subtree has a height of 2 (2 levels down)
