@@ -182,10 +182,19 @@ so the difference is 1 which satisfies the condition__**
 
 **levels = height + 1**
 
-## to calculate the total number of nodes in this binary tree , it is 2 ^ (h+1) - 1 nodes 
+## to calculate the total number of nodes in this perfect binary tree , it is 2 ^ (h+1) - 1 nodes 
 ## remember : (log 2 to base 2 = 1)
 ## to get the height from the formula number of nodes (n) = 2 ^ (h+1) -1 , we use log to both right hand and left sides and then the height = Log(n+1) - 1 , the base here is 2 not 10  
 
+- In any binary tree, :
+- Each level has max of 2h nodes
+- For L levels, No more than 2^L -1 nodes
+- For N nodes, the min # of levels is: ceil(log(N+1)) , NOTE : CEIL HERE CORRESPONDS TO THE LOG OF BASE 2 !
+- __in other words__ : 
+- **if we have 7 nodes then the numbers of levels is log2(7+1) = log2(8) = 3** 
+- 1 Node => 1, 3 Nodes => 2 levels , 7 Nodes => 3, 15 Nodes => 4 levels ( these are for perfect case )
+**For M leafs, the min # of levels is: ceil(log M) + 1**
+- 1 leafs => 1 level, 2 leafs => 2 levels, 4 leafs => 3 levels, 8 leafs => 4 levels, 16 leafs => ⇒ levels 5
 
 ---
 
