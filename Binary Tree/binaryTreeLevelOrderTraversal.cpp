@@ -55,3 +55,33 @@ public:
         return allLevels;
     }
 };
+
+/*
+*********** easy to go explanation for my reference later and
+remembering how i have had implemented it ,
+
+my issues to remember : runtime (segmentation fault), when i
+tried to access a value of a derefrenced pointer because of a
+wrong if node == nullptr condition
+
+got memory limit excceeded when i made a typo in an if condition
+inside the for loop when enqueuing
+both node's children into the queue.
+
+
+Tree: 1
+     / \
+    2  3
+
+* queue holds one address: &1
+* pop &1 → node points to the “1” house
+* read node->val (1)
+* its left pointer is &2, right pointer is &3 → enqueue both
+* finished first floor → result [1]
+* queue now [&2, &3]
+* next floor size = 2
+* pop &2, read mailbox 2, enqueue nothing (both children are nullptr)
+* pop &3, read mailbox 3, enqueue nothing
+* queue empty → done → result [[1],[2,3]]
+
+*/
