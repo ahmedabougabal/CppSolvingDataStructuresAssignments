@@ -57,3 +57,17 @@ public:
     return recursiveConstruct(nums, low, high);
   }
 };
+
+/*
+pseudo-code (divide and conquer) - recursion
+
+build(lo, hi):
+    if lo > hi:            // sub-array empty
+        return nullptr
+    idx = indexOfMax(lo…hi)
+    root = new TreeNode(nums[idx])
+    root->left  = build(lo,      idx-1)
+    root->right = build(idx+1 ,  hi)
+    return root
+
+*/
